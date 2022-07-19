@@ -1,0 +1,35 @@
+<div>
+  In this project the goal is to modify the translate varables using RxJS to
+  produce the desired output
+</div>
+<br />
+
+<div>Input1: {{ input1$ | async }}</div>
+<div>Input2: {{ input2$ | async }}</div>
+
+<br />
+
+<table style="width: 100%">
+  <tr>
+    <th>Goal</th>
+    <th style="width: 50%">Actual</th>
+  </tr>
+  <tr>
+    <td>[10,20,30,40,50]</td>
+    <td>{{ output1 | json }}</td>
+  </tr>
+  <tr>
+    <td>[1,2,3,4,5,10,20,30,40,50]</td>
+    <td>{{ output2 | json }}</td>
+  </tr>
+  <tr>
+    <td>[1,10, 2, 20, 3, 30, 4, 40, 5, 50]</td>
+    <td>{{ output3 | json }}</td>
+  </tr>
+  <tr>
+    <td>
+      [1,10], [2,10], [2,20], [3,20], [3,30], [4,30], [4,40], [5,40], [5,50]
+    </td>
+    <td>{{ output4 | json }}</td>
+  </tr>
+</table>
